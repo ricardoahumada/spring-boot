@@ -56,7 +56,7 @@ public class StudentController {
             produces = MediaType.APPLICATION_JSON_VALUE
     )
 //    public Message postNewStudentTest(@Valid @RequestBody Student newStudent) {
-    public ResponseEntity<Message> postNewStudentTest(@Valid @RequestBody Student newStudent) {
+    public ResponseEntity<Message> postNewStudent(@Valid @RequestBody Student newStudent) {
         System.out.println(newStudent);
         stdServ.addStudent(newStudent);
 //        return new Message("Todo OK");
